@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(10, 10, 10);
+    overflow-x: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    margin-top: 0;
+    padding: 25px;
+    color: aliceblue;
+}
+
+.image {
+    flex: 1;
+    text-align: right;
+}
+
+.image img {
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+    color: aliceblue;
+}
+
+.project img{
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.project.visible {
+    opacity: 1;
+}
+
+
